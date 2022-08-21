@@ -1,10 +1,11 @@
 from jinja2 import Template
 import calendar
 
+FOLDER_NAME = '3_semester'
 month_names = ['იანვარი', 'თებერვალი', 'მარტი', 'აპრილი', 'მაისი', 'ივნისი', 'ივლისი', 'აგვისტო', 'სექტემბერი', 'ოქტომბერი', 'ნოემბერი', 'დეკემბერი']
 year = 2022  # start year
-month = 1  # start month
-n, max_n = -7, 20  # range for n
+month = 9  # start month
+n, max_n = -2, 20  # range for n
 
 def get_year_and_month(year, month):
     months_sum = year * 12 + month - 1
@@ -34,5 +35,5 @@ for month_count in range(9):
     
     # print(t.render(**content))
 
-    with open(f'./2022/{m}_{y}.html', 'w', encoding='utf-8') as f:
+    with open(f'./{FOLDER_NAME}/{y}_{m}.html', 'w', encoding='utf-8') as f:
         f.write(t.render(**content))
