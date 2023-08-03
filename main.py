@@ -1,11 +1,12 @@
 from jinja2 import Template
 import calendar
+import os
 
-FOLDER_NAME = '4_semester'
+FOLDER_NAME = '5_semester'
 month_names = ['იანვარი', 'თებერვალი', 'მარტი', 'აპრილი', 'მაისი', 'ივნისი', 'ივლისი', 'აგვისტო', 'სექტემბერი', 'ოქტომბერი', 'ნოემბერი', 'დეკემბერი']
 year = 2023  # start year
-month = 3  # start month
-n, max_n = -0, 20  # range for n
+month = 9  # start month
+n, max_n = -2, 20  # range for n
 
 def get_year_and_month(year, month):
     months_sum = year * 12 + month - 1
@@ -16,6 +17,9 @@ html_cal = calendar.HTMLCalendar(firstweekday = 0)
 
 with open('./template.html', 'r', encoding='utf-8') as f:
     t = Template(f.read())
+
+if not os.path.isdir(FOLDER_NAME):
+    os.makedirs(FOLDER_NAME)
 
 for month_count in range(9):
     y, m = get_year_and_month(year, month + month_count)
