@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        span {
+            font-size: 80px;
+            font-family: Tahoma;
+        }
+
+        table {
+            font-size: 30px;
+        }
+        
+        table tbody tr{
+            height: 132px;
+        }
+        
+        table tbody tr th{
+            text-align: center;
+            vertical-align: auto;
+        }
+
+        .table-bordered {
+            border: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="row ">
+            <div class="col">
+                <span></span>
+            </div>
+            <div class="col-8 text-center">
+                <span>ივლისი 2024</span>
+            </div>
+            <div class="col">
+                <span></span>
+            </div>
+        </div>
+        <div class="row mx-auto mt-3 justify-content-md-center">
+            <div class="col col-md-11">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr class="text-center">
+                            <th scope="col" style="width: 4%">N</th>
+                            <th scope="col" style="width: 14%">ორშაბათი</th>
+                            <th scope="col" style="width: 14%">სამშაბათი</th>
+                            <th scope="col" style="width: 14%">ოთხშაბათი</th>
+                            <th scope="col" style="width: 14%">ხუთშაბათი</th>
+                            <th scope="col" style="width: 14%">პარასკევი</th>
+                            <th scope="col" style="width: 13%">შაბათი</th>
+                            <th scope="col" style="width: 13%">კვირა</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+			<tr> <th>18</th> <td class="mon">1</td><td class="tue">2</td><td class="wed">3</td><td class="thu">4</td><td class="fri">5</td><td class="sat">6</td><td class="sun">7</td></tr>
+			<tr> <th>19</th> <td class="mon">8</td><td class="tue">9</td><td class="wed">10</td><td class="thu">11</td><td class="fri">12</td><td class="sat">13</td><td class="sun">14</td></tr>
+			<tr> <th>20</th> <td class="mon">15</td><td class="tue">16</td><td class="wed">17</td><td class="thu">18</td><td class="fri">19</td><td class="sat">20</td><td class="sun">21</td></tr>
+			<tr> <th></th> <td class="mon">22</td><td class="tue">23</td><td class="wed">24</td><td class="thu">25</td><td class="fri">26</td><td class="sat">27</td><td class="sun">28</td></tr>
+			<tr> <th></th> <td class="mon">29</td><td class="tue">30</td><td class="wed">31</td><td class="noday">&nbsp;</td><td class="noday">&nbsp;</td><td class="noday">&nbsp;</td><td class="noday">&nbsp;</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
